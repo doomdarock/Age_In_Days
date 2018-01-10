@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Your age in days</title>
+    <script src = "ageInDays.js"></script>
+    <script src = "ToggleLang.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body onload="setLang();">
+    <button id="language" onclick="toggleLang()">Francais</button>
+    <div id="En">
+      <h1>Your age in days</h1>
+      <p>Enter your birth date below:</p>      
+    </div>
+    <div id="Fr">
+      <h1 class="Fr">Votre âge en jours</h1>
+      <p class="Fr">Entrez votre date de naissance ci-dessous:</p>
+    </div>
+      <input type="text" id="bday" value="YYYY/MM/DD" onclick="this.value=''"  onchange="getVal()">
+      <button onclick="getVal()">Submit</button>
+    
+    <p id="result"></p>
+    <p id="resultInHours"></p>
+  </body>
+</html>
